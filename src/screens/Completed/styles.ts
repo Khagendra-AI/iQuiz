@@ -1,0 +1,53 @@
+import { Dimensions, StyleSheet } from "react-native";
+const SCREEN_WIDTH=Dimensions.get('screen').width
+const styles = StyleSheet.create({
+  container:{
+    width:SCREEN_WIDTH,
+    flex:1,
+    alignItems:'center',
+  },
+  completedView:{
+    marginTop:20,
+  },
+  completedText:{
+    fontSize:25,
+    fontWeight:'800'
+  },
+  detailView:{
+    marginTop:'10%',
+    padding:10,
+    width:SCREEN_WIDTH*.8,
+    borderWidth:1
+  },
+  infoView:{
+    marginVertical:10,
+    flexDirection:'row',
+    justifyContent:'space-between'
+  },
+  infoText:{
+    fontSize:19,
+  },
+  infoValue:{
+    fontSize:19,
+  },
+  paraText:{
+    fontSize:19,
+    fontWeight:'500'
+  },
+  paraView:{
+    //backgroundColor:'red',
+    alignItems:'center',
+    width:SCREEN_WIDTH*.85,
+    marginTop:'10%',
+  },
+  buttonView:{
+    marginTop:'10%',
+    padding:5,
+    backgroundColor:'#CADCFC',
+    borderRadius:10,
+  },
+  goText:{
+    fontSize:20,
+  },
+})
+export default styles
